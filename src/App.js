@@ -1,7 +1,15 @@
+import { BrowserRouter, Switch, Route } from 'react-router-dom'
+
+import Home from './pages/Home'
+
 function App () {
   return (
     <div>
-      <h1>Netflix Clone</h1>
+      <BrowserRouter>
+        <Switch>
+          <Route path='/' component={Home} />
+        </Switch>
+      </BrowserRouter>
     </div>
   )
 }
